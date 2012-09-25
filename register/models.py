@@ -1,0 +1,31 @@
+from django.db import models
+from django.contrib import admin
+
+class Registration(models.Model):
+    PROG = (("BA", "BA"),("Bsc","Bsc"), )
+    LEVEL =(('L100','L100'),('L200','L200'),('L300','L300'),('L400','L400'),)
+    ID = models.IntegerField(max_length = 8, primary_key = True)
+    sur_name = models.CharField(max_length = 30)
+    other_names = models.CharField(max_length = 30)
+    programe = models.CharField(max_length =5, choices = PROG, blank = True)
+    level = models.CharField(max_length =5, choices = LEVEL)
+    phone_number = models.IntegerField(max_length = 10)
+    hall = models.CharField(max_length = 30, blank = True)
+    room_number = models.CharField(max_length = 30, blank = True)
+    email = models.EmailField(max_length = 75, blank = True)
+    remarks = models.TextField(max_length = 300 , blank = True)
+    def __unicode__(self):
+       return (self.sur_name)
+
+    class Meta:
+       db_table = 'registration'
+	
+	
+class RegistrationAdmin(admin.ModelAdmin):
+    list_display = ('ID','sur_name','other_names','programe','phone_number','hall','room_number','email')
+    search_fields = ('sur_name','other_names','programe','hall')
+    list_filter = ('programe','level',)
+
+	
+	
+admin.site.register(Registration,RegistrationAdmin)
