@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.conf import settings
-
+import forum
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
@@ -15,4 +15,8 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+	url(r'^forum/', include('forum.urls')),
+	url(r'^accounts/', include('registration.urls')),
+	#url(r'^accounts/', include('Accounts.urls'))
+	
 )

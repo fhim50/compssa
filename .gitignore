@@ -1,0 +1,26 @@
+*.pyc
+*.pyo
+
+
+#for pdfs
+._*.pdf
+
+#for gedit
+*~
+~*
+
+
+#the local sqlite database
+*.db
+*.sqlite
+
+#for dir
+forumsrc/
+django/
+registration/
+
+
+
+# for txt
+*.txt
+

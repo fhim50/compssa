@@ -126,6 +126,8 @@ INSTALLED_APPS = (
     'register',
     'django.contrib.admin',
     'south',
+	'forum',
+	'registration',
     #'dj_simple_sms',
     
 
