@@ -18,7 +18,7 @@
     </style>
 <!-- THREADS -->
 <div class="main">
-<a id="new_topic" class ="buttont" href ="{% url 'forum.views.post' 'new_thread' pk %}"> Start New Topic </a>
+<a id="new_topic" class ="buttont" href ="{% url forum.views.post 'new_thread' pk %}"> Start New Topic </a>
 </br>
 <br/>
 
@@ -34,12 +34,12 @@
 		{% for thread in threads.object_list %}
 		<tr>
 			<td {% if forloop.last %}class = "last"{% endif %}>
-				<div class = "title"><a href= "{% url 'forum.views.thread' thread.pk %}">{{thread.title}}
+				<div class = "title"><a href= "{% url forum.views.thread thread.pk %}">{{thread.title}}
 				</div></td>
 				
 			<td {% if forloop.last %}class ="last"{% endif %}>{{ thread.num_replies}}<td>
 			<td {% if forloop.last %}class = "last" {% endif%}>{{thread.last_post.short|linebreaksbr}}</td>
-			<td {% if forloop.last %}class ="last"{% endif %} ><a class="button" href="{% url 'forum.views.thread' thread.pk %}">
+			<td {% if forloop.last %}class ="last"{% endif %} ><a class="button" href="{% url forum.views.thread thread.pk %}">
 			</td>
 		</tr>
 		<!-- if thread is empty -->

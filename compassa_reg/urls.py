@@ -1,11 +1,13 @@
 from django.conf.urls import patterns, include, url
 from django.conf import settings
 import forum
+from register.views import *
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+    (r'^grappelli/', include('grappelli.urls')),
     # Examples:
     # url(r'^$', 'compassa_reg.views.home', name='home'),
     #url(r'^compassa_reg/', include('compassa_reg.foo.urls')),
@@ -18,5 +20,6 @@ urlpatterns = patterns('',
 	url(r'^forum/', include('forum.urls')),
 	url(r'^accounts/', include('registration.urls')),
 	#url(r'^accounts/', include('Accounts.urls'))
+	url(r'^home/', 'register.views.home')
 	
 )

@@ -19,7 +19,7 @@
         <p>
             <form enctype="multipart/form-data" action="" method="POST"> {% csrf_token %}
 
-                {% if img %} <p><img border="0" alt="Profile Pic" src="{{ img }}" /></p> {% endif %}
+                {% if img %} <p><img border="0" alt="Profile Pic" src="{{ img }}"   /></p> {% endif %}
 
                 Profile Pic: {{ pfile.picture}}
                 <input type="submit" value="Submit" id="submit" />

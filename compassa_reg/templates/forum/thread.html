@@ -28,7 +28,7 @@
 {% endcomment %}
 <div class="title">{{ title }}</div>
 <div id="back">
-                <a href="{% url 'forum.views.forum' forum_pk %}">&lt;&lt; back to list of topics</a>
+                <a href="{% url forum.views.forum forum_pk %}">&lt;&lt; back to list of topics</a>
             </div>
 <div id="list">
 	<!-- Post -->
@@ -71,7 +71,7 @@
         {% endif %}
 
         <br />
-        <a class="button" href="{% url 'forum.views.post' 'reply' pk %}">Reply</a>
+        <a class="button" href="{% url forum.views.post 'reply' pk %}">Reply</a>
 
     </div>
 

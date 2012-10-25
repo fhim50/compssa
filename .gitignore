@@ -16,8 +16,9 @@
 
 #for dir
 forumsrc/
-django/
+django14/
 registration/
+django15/
 
 
 
