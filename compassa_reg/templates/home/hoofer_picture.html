@@ -1,0 +1,58 @@
+<style type="text/css">
+.hoverBoxBox {width:700px; height:437px; margin:0 auto; border:20px solid #fc6; background:#fff; box-shadow:0 15px 10px -15px rgba(0,0,0,0.4);
+background: url(oneBox/bw1.jpg), url(oneBox/bw2.jpg), url(oneBox/bw7.jpg), url(oneBox/bw1.jpg);
+background-position: 0 -500px, 0 -500px, 0 -500px, 0 0;
+background-repeat: no-repeat;
+-webkit-transition: 0s 9999999s;
+-moz-transition: 0s 9999999s;
+-ms-transition: 0s 9999999s;
+-o-transition: 0s 9999999s;
+transition: 0s 9999999s;
+}
+.hoverBox {padding:10px; margin:10px; border:1px solid #aaa; box-shadow:0 15px 10px -15px rgba(0,0,0,0.4);}
+
+img.pic1:hover ~ .hoverBoxBox {border-color: #c6f;
+background-position: 0 0, 0 -500px, 0 -500px, 0 -500px;
+-webkit-transition:0.5s;
+-moz-transition:0.5s;
+-ms-transition:0.5s;
+-o-transition:0.5s;
+transition:0.5s;
+}
+img.pic2:hover ~ .hoverBoxBox {border-color: #6fc;
+background-position: 0 -500px, 0 0, 0 -500px, 0 -500px;
+-webkit-transition:0.5s;
+-moz-transition:0.5s;
+-ms-transition:0.5s;
+-o-transition:0.5s;
+transition:0.5s;
+}
+img.pic3:hover ~ .hoverBoxBox {border-color: #6cf;
+background-position: 0 -500px, 0 -500px, 0 0, 0 -500px;
+-webkit-transition:0.5s;
+-moz-transition:0.5s;
+-ms-transition:0.5s;
+-o-transition:0.5s;
+transition:0.5s;
+}
+</style>
+
+<div id="info">
+
+
+<h2>CSS play Permanent Image hover Gallery</h2>
+<h2>NO javascript, NO :target, NO iframes and NO object</h2>
+<h3>27th June 2012</h3>
+
+<h2>Firefox, Safari, Chrome and Opera</h2>
+<br /><br />
+<img src="oneBox/bw1t.jpg" alt="" class="hoverBox pic1" />
+<img src="oneBox/bw2t.jpg" alt="" class="hoverBox pic2" />
+<img src="oneBox/bw7t.jpg" alt="" class="hoverBox pic3" />
+<br /><br /><br />
+<div class="hoverBoxBox"></div>
+
+			<p class="info">copyright &copy; stu nicholls - CSS play</p>
+
+		</div> <!-- end info -->
+

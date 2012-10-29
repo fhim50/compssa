@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		{%  block title %} <title> Compssa </title> {% endblock%}
+		<link rel="icon" href="/static/bootstrap/img/favicon.ico"  sizes="16x16" />
+		<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css" type="text/css" media="screen" charset="utf-8"/>
+	<style type="text/css">
+	.home{
+	
+	!important;
+	margin-left:10pc;
+	margin-right:10pc;
+	margin-top:2pc;
+	
+	border-style:solid;
+	border-top-color:#B24700;
+	
+	border-bottom-color:#B24700;
+	border-left-color:#B24700;
+	border-right-color:#B24700;
+	
+	
+
+	
+	
+	}
+	/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/ipad-social-network.html
+Copyright (c) 2005-2009 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+.holder {padding:10px; background:#ddd; float:left; margin-left:2px;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;
+}
+
+ul.social, ul.network {margin:0; padding:0; list-style:none;}
+ul.social {position:relative; z-index:100;}
+ul.social li {float:left;}
+ul.social li a {display:block; width:64px; height:64px; padding:1px;}
+
+ul.social li a img {display:block; border:0;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+}
+
+ul.network {position:absolute; width:66px; height:66px; top:-10px; left:-10px; z-index:-1; border:10px solid #ddd; background:#ddd;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;
+
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+}
+ul.network li a {position:absolute; top:0; left:0;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+}
+
+ul.network li a.p1 {left:0;}
+ul.network li a.p2 {left:0;}
+ul.network li a.p3 {left:0;}
+ul.network li a.p4 {left:0;}
+ul.network li a.p5 {left:0;}
+ul.network li a.p6 {left:0;}
+ul.network li a.p7 {left:0;}
+ul.network li a.p8 {left:0;}
+ul.network li a.p9 {left:0;}
+ul.network li a.p10 {left:0;}
+
+ul.network li a.p1 img {width:28px; padding:18px;}
+ul.network li a.p2 img {width:32px; padding:16px;}
+ul.network li a.p3 img {width:36px; padding:14px;}
+ul.network li a.p4 img {width:40px; padding:12px;}
+ul.network li a.p5 img {width:44px; padding:10px;}
+ul.network li a.p6 img {width:48px; padding:8px;}
+ul.network li a.p7 img {width:52px; padding:6px;}
+ul.network li a.p8 img {width:56px; padding:4px;}
+ul.network li a.p9 img {width:60px; padding:2px;}
+ul.network li a.p10 img {width:64px; padding:0;}
+
+
+ul.social li:hover ul.network {width:660px; left:56px;}
+
+ul.social li:hover ul.network li a.p1 {left:90%;}
+ul.social li:hover ul.network li a.p2 {left:80%;}
+ul.social li:hover ul.network li a.p3 {left:70%;}
+ul.social li:hover ul.network li a.p4 {left:60%;}
+ul.social li:hover ul.network li a.p5 {left:50%;}
+ul.social li:hover ul.network li a.p6 {left:40%;}
+ul.social li:hover ul.network li a.p7 {left:30%;}
+ul.social li:hover ul.network li a.p8 {left:20%;}
+ul.social li:hover ul.network li a.p9 {left:10%;}
+ul.social li:hover ul.network li a.p10 {left:0%;}
+
+ul.social li:hover ul.network li a img {width:64px; padding:0;}
+
+ul.social li.close {position:absolute; left:-9999px; top:-20px;  width:50px; height:50px; background:url(/static/img/close.png); opacity:0;
+-webkit-transition: opacity 1s ease-in-out;
+-moz-transition: opacity 1s ease-in-out;
+-ms-transition: opacity 1s ease-in-out;
+-o-transition: opacity 1s ease-in-out;
+transition: opacity 1s ease-in-out;
+
+transition-delay: 1s;
+-o-transition-delay: 1s;
+-moz-transition-delay: 1s;
+-ms-transition-delay: 1s;
+-webkit-transition-delay: 1s;
+}
+
+.clear {clear:both;}
+
+/* menu style */
+.menu {width:749px; height:40px; position:relative; margin:20px 0 20px 10px;}
+.menu span {display:block; width:106px; height:40px; float:left; margin-right:1px; background:#09c; font:normal 13px/40px arial, sans-serif; text-align:center; color:#fff; border-radius:10px 10px 0 0; cursor:default;}
+.menu a.topLevel {display:block; width:106px; font:normal 13px/40px arial, sans-serif; text-decoration:none; color:#fff; border-radius:10px 10px 0 0;} 
+.menu span:hover a {background:#0be;}
+
+.menu ul {padding:20px 0 10px 0; margin:0; background:#09c; list-style:none; float:left; position:absolute; top:40px; left:-9998px; border-radius:0 0 10px 10px; border-top:1px solid #fff;
+-webkit-transition:0s 3600s;
+-moz-transition:0s 3600s;
+-ms-transition:0s 3600s;
+-o-transition:0s 3600s;
+transition:0s 3600s;
+}
+.menu ul li a {display:block; font:normal 13px/25px arial, sans-serif; text-decoration:none; color:#fff; padding:0 20px 0 10px;}
+.menu ul li a:hover {background:#0be;}
+.menu span:hover ~ ul {
+-webkit-transition:0s 0s;
+-moz-transition:0s 0s;
+-ms-transition:0s 0s;
+-o-transition:0s 0s;
+transition:0s 0s;
+}
+.menu span.p2:hover ~ ul.p2 {left:107px;}
+.menu span.p2:hover ~ ul.p3,
+.menu span.p2:hover ~ ul.p4,
+.menu span.p2:hover ~ ul.p5,
+.menu span.p2:hover ~ ul.p6 {left:-9999px;}
+
+.menu span.p3:hover ~ ul.p3 {left:214px;}
+.menu span.p3:hover ~ ul.p2,
+.menu span.p3:hover ~ ul.p4,
+.menu span.p3:hover ~ ul.p5,
+.menu span.p3:hover ~ ul.p6 {left:-9999px;}
+
+.menu span.p4:hover ~ ul.p4 {left:321px;}
+.menu span.p4:hover ~ ul.p2,
+.menu span.p4:hover ~ ul.p3,
+.menu span.p4:hover ~ ul.p5,
+.menu span.p4:hover ~ ul.p6 {left:-9999px;}
+
+.menu span.p5:hover ~ ul.p5 {left:428px;}
+.menu span.p5:hover ~ ul.p2,
+.menu span.p5:hover ~ ul.p3,
+.menu span.p5:hover ~ ul.p4,
+.menu span.p5:hover ~ ul.p6 {left:-9999px;}
+
+.menu span.p6:hover ~ ul.p6 {left:535px;}
+.menu span.p6:hover ~ ul.p2,
+.menu span.p6:hover ~ ul.p3,
+.menu span.p6:hover ~ ul.p4,
+.menu span.p6:hover ~ ul.p5 {left:-9999px;}
+
+.menu span.p1:hover ~ ul,
+.menu span.p7:hover ~ ul {left:-9999px;}
+
+.menu img.close {width:16px; height:16px; position:absolute; top:44px; left:-9998px; z-index:100;
+-webkit-transition:0s 3600s;
+-moz-transition:0s 3600s;
+-ms-transition:0s 3600s;
+-o-transition:0s 3600s;
+transition:0s 3600s;
+}
+.menu span:hover ~ .close {
+-webkit-transition:0s 0s;
+-moz-transition:0s 0s;
+-ms-transition:0s 0s;
+-o-transition:0s 0s;
+transition:0s 0s;
+}
+
+.menu span.p2:hover ~ .close {left:110px;}
+.menu span.p3:hover ~ .close {left:217px;}
+.menu span.p4:hover ~ .close {left:324px;}
+.menu span.p5:hover ~ .close {left:431px;}
+.menu span.p6:hover ~ .close {left:538px;}
+.menu span.p1:hover ~ .close,
+.menu span.p7:hover ~ .close {left:-9999px;}
+
+.menu img.close:hover {left:-9999px;
+-webkit-transition:0s 0s;
+-moz-transition:0s 0s;
+-ms-transition:0s 0s;
+-o-transition:0s 0s;
+transition:0s 0s;
+}
+.menu img.close:hover ~ ul {left:-9999px;
+-webkit-transition:0s 0s;
+-moz-transition:0s 0s;
+-ms-transition:0s 0s;
+-o-transition:0s 0s;
+transition:0s 0s;
+}
+
+/* end menu style */
+
+{% block style %}
+{% endblock %}
+	</style>
+	</head>
+	<body class="home">
+	
+	<div id="info">
+
+
+
+			<div class="menu" style="margin-left:125px;">
+				<span class="p1"><a class="topLevel" href="index.html">Home</a></span>
+				<span class="p2" onclick="void(0)">Gallary &#8711;</span>
+				<span class="p3" onclick="void(0)"><a style="text-decoration:none !important;" href="/forum/main">forum &#8711;</a></span>
+				<span class="p4" onclick="void(0)">blog &#8711;</span>
+				<span class="p5" onclick="void(0)">Contact Us &#8711;</span>
+				<span class="p6" onclick="void(0)">Social &#8711;</span>
+				<span class="p7"><a class="topLevel" href="index.html">Private</a></span>
+				<img src="/static/img/close.png" alt="" class="close" />
+				<ul class="p2">
+					<li><a href="index.html">Vedios &amp; Framing</a></li>
+					<li><a href="index.html">Photos</a></li>
+					<!--<li><a href="index.html">Storage &amp; Backup</a></li> -->
+				</ul>
+				{% comment %}
+				<ul class="p3">
+					<li><a href="index.html">link</a></li>
+					<li><a href="index.html">link</a></li>
+					<li><a href="index.html">link</a></li>
+					<li><a href="index.html">links</a></li>
+					<li><a href="index.html">link</a></li>
+					<li><a href="index.html">link</a></li>
+				</ul>
+				<ul class="p4">
+					<li><a href="index.html">South West Region</a></li>
+					<li><a href="index.html">North East Region</a></li>
+					<li><a href="index.html">Central Region</a></li>
+				</ul>
+				<ul class="p5">
+					<li><a href="index.html">Email Addresses</a></li>
+					<li><a href="index.html">By Post</a></li>
+					<li><a href="index.html">Telephone Numbers</a></li>
+				</ul>
+				<ul class="p6">
+					<li><a href="index.html">link</a></li>
+					<li><a href="index.html">link</a></li>
+					<li><a href="index.html">link &amp; links</a></li>
+					<li><a href="index.html">link</a></li>
+					<li><a href="index.html">link &amp; links</a></li>
+				</ul>
+				{%endcomment%}
+			</div>
+
+						
+
+	</div> 
+	<!-- End of Header -->
+	
+
+	
+
+   
+   <div class="home">
+	{% block content %}
+	{% endblock%}
+	thjkgfkbn orld
+	bkk nlnefnbdn l
+	fjbknk rs
+	fpclnrlkfkncbj r;lfdn
+	rpdhlmklr.md,b
+	 rdjblmlr jdmklbnfkbgkjbirhvbdkfbgkvhednolbr
+	 dlpb orhndonbj krbdkjgbvibekdbxn gvieiksxjglb. rd
+	 korbldhkhnkln djv bfikcnlkenbdi bikdb
+	  ehdkvjbk ebd k sdgxkjv
+	  i5rkhnbknjhnbjknjtrnjnbnrjkgnbn
+	  
+	thjkgfkbn orld
+	bkk nlnefnbdn l
+	fjbknk rs
+	fpclnrlkfkncbj r;lfdn
+	rpdhlmklr.md,b
+	 rdjblmlr jdmklbnfkbgkjbirhvbdkfbgkvhednolbr
+	 dlpb orhndonbj krbdkjgbvibekdbxn gvieiksxjglb. rd
+	 korbldhkhnkln djv bfikcnlkenbdi bikdb
+	  ehdkvjbk ebd k sdgxkjv
+	  i5rkhnbknjhnbjknjtrnjnbnrjkgnbn
+	  
+	thjkgfkbn orld
+	bkk nlnefnbdn l
+	fjbknk rs
+	fpclnrlkfkncbj r;lfdn
+	rpdhlmklr.md,b
+	 rdjblmlr jdmklbnfkbgkjbirhvbdkfbgkvhednolbr
+	 dlpb orhndonbj krbdkjgbvibekdbxn gvieiksxjglb. rd
+	 korbldhkhnkln djv bfikcnlkenbdi bikdb
+	  ehdkvjbk ebd k sdgxkjv
+	  i5rkhnbknjhnbjknjtrnjnbnrjkgnbn
+	  
+	thjkgfkbn orld
+	bkk nlnefnbdn l
+	fjbknk rs
+	fpclnrlkfkncbj r;lfdn
+	rpdhlmklr.md,b
+	 rdjblmlr jdmklbnfkbgkjbirhvbdkfbgkvhednolbr
+	 dlpb orhndonbj krbdkjgbvibekdbxn gvieiksxjglb. rd
+	 korbldhkhnkln djv bfikcnlkenbdi bikdb
+	  ehdkvjbk ebd k sdgxkjv
+	  i5rkhnbknjhnbjknjtrnjnbnrjkgnbn
+	</div>
+
+	<!-- social networks -->
+<div id="info">
+		<div class="holder">
+			<ul class="social">
+				<li><a href="#url"><img src="/static/img/social.jpg" alt="Social Networks" />
+					<ul class="network">
+						<li><a class="p1" href="#url"><img src="/static/img/digg.png" alt="digg" /></a></li>
+						<li><a class="p2" href="#url"><img src="/static/img/reddit.png" alt="reddit" /></a></li>
+						<li><a class="p3" href="#url"><img src="/static/img/myspace.png" alt="myspace" /></a></li>
+						<li><a class="p4" href="#url"><img src="/static/img/twitter.png" alt="twitter" /></a></li>
+						<li><a class="p5" href="#url"><img src="/static/img/stumbleupon.png" alt="stumbleupon" /></a></li>
+						<li><a class="p6" href="#url"><img src="/static/img/youtube.png" alt="youtube" /></a></li>
+						<li><a class="p7" href="#url"><img src="/static/img/linkedin.png" alt="linkedin" /></a></li>
+						<li><a class="p8" href="#url"><img src="/static/img/yahoo.png" alt="yahoo" /></a></li>
+						<li><a class="p9" href="#url"><img src="/static/img/delicious.png" alt="delicious" /></a></li>
+						<li><a class="p10" href="#url"><img src="/static/img/facebook.png" alt="facebook" /></a></li>
+					</ul>
+				</li>
+				<li class="close"><a href="#url"></a></li>
+			</ul>
+		</div>
+		<br class="clear" /><br /><br /><br /><br />
+
+					
+
+		</div>	
+	
+	
+	
+
+	
+	</body>
+</html>

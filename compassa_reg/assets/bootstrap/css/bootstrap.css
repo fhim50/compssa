@@ -161,9 +161,11 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #333333;
-  background-color:#383838 ;
+  background-color:black ;
 }
-
+/*!
+* info comment for background color
+*/
 a {
   color: #0088cc;
   text-decoration: none;
