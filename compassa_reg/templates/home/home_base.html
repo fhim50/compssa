@@ -230,7 +230,19 @@ transition:0s 0s;
 	<div id="info">
 
 
+			<div class=home>
+			{% if user.is_staff %} <a href="{% url admin:index %}">Admin</a> {% endif %}
+                {% if user.is_authenticated %}
+                    <a href="{% url forum.views.profile user.pk %}">Edit profile</a> {% endif %}
 
+                {% if not user.is_authenticated %}<a href="/accounts/login/?next=/home">login</a> | <a
+                    href="/accounts/register/">register</a>{% endif %}
+
+                {% if user.is_authenticated %}<a href="/accounts/logout/?next=/home">logout</a>
+                    {% endif %}
+
+			
+			</div>
 			<div class="menu" style="margin-left:125px;">
 				<span class="p1"><a class="topLevel" href="index.html">Home</a></span>
 				<span class="p2" onclick="void(0)">Gallary &#8711;</span>
