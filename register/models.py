@@ -2,6 +2,14 @@ from django.db import models
 from django.contrib import admin
 
 class Registration(models.Model):
+    """
+	HALLS = legon hall , Mensah Sarbah hall ,Akuafo hall, Common Wealth Hall ,Volta Hall
+	Jean Nelson akah Hall ,Elizabeth frances sey, alexader Kwarpong, hilla limman,
+	Africa Union Hall, evandy Hostels, Bani Hostels, TF hostel, Jubilee Hall....
+	"""
+	
+
+
     PROG = (("BA", "BA"),("Bsc","Bsc"), )
     LEVEL =(('L100','L100'),('L200','L200'),('L300','L300'),('L400','L400'),)
     ID = models.IntegerField(max_length = 8, primary_key = True)

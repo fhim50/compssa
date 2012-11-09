@@ -90,6 +90,8 @@ class ForumAdmin(admin.ModelAdmin):
 class ThreadAdmin(admin.ModelAdmin):
     list_display = ["title", "forum", "creator", "created"]
     list_filter = ["forum", "creator"]
+    #list_editable = ["title", "forum", "creator", "created"]
+    #list_display_links = ("title",)
     #change_list_filter_temlate =  "admin/filter_list.html"
 
 class PostAdmin(admin.ModelAdmin):
