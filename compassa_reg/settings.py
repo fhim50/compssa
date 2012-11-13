@@ -136,6 +136,7 @@ INSTALLED_APPS = (
     'south',
 	'forum',
 	'registration',
+	'fileserver',
     #'dj_simple_sms',
     
 

@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.conf import settings
 import forum
+import fileserver
 from register.views import *
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -20,6 +21,7 @@ urlpatterns = patterns('',
 	url(r'^forum/', include('forum.urls')),
 	url(r'^accounts/', include('registration.urls')),
 	#url(r'^accounts/', include('Accounts.urls'))
-	url(r'^home/', 'register.views.home')
+	url(r'^home/', 'register.views.home'),
+	url(r'files/', include('fileserver.urls')),
 	
 )
