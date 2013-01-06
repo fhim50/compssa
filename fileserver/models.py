@@ -47,6 +47,6 @@ class FileserverAdmin(admin.ModelAdmin):
 	search_fields = ('name', 'path',)
 	ordering =['name']
 		
-		
+	
 	
 admin.site.register(Fileserver, FileserverAdmin)

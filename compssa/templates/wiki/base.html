@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+	
+	
+{% extends "wiki_reg/base.html" %}
+
+{% block content %}
+Thanks! Your account has be activated. Please <a href="{% url auth_login %}?next={% url wiki_article_index %}">login to continue</a>
+{% endblock %}
+
+	
+{%block main%}
+{% endblock%}	
+	</body>
+</html>

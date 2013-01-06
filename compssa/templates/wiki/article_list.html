@@ -1,0 +1,20 @@
+{% extends "wiki/base.html"%}
+
+
+{%block main%}
+{% if object_list %}
+<h2> Recent articles </h2>
+
+<ul>
+	{% for rticle in object_list %}
+	<li>
+		<a href = "{% url wiki_article_details.slug%}">{article.title}</a>
+		</li>
+	{% endfor %}
+{% else %}
+<h2> No Articles in DB </h2>
+
+{% endif%}
+<a href="{% url wiki_article_add" %}>Create New Article </a>
+
+{%endblock%}
